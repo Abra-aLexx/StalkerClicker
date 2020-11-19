@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/statisticfon"
+    tools:context=".ShopActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/buttonBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:onClick="backToGame"
+                    android:text="@string/backToMenu"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageKnife"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/knife"
+                     />
+
+                <TextView
+                    android:id="@+id/textKnife"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/knife"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imagePm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/pm"
+                     />
+
+                <TextView
+                    android:id="@+id/textPm"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/pm"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonPm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="buyPm"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyPM" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageObrez"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/obrez"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textObrez"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/obrez"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonObrez"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="buyObrez"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyObrez" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageAksy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/aksu"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textAksy"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/aksy"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonAksy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="buyAksu"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyAksy" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageAk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/ak"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textAk"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/ak"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonAk"
+                    android:layout_width="0dp"
+                    android:onClick="buyAk"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyAk" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageLr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/lr"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textLr"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/lr"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonLr"
+                    android:layout_width="0dp"
+                    android:onClick="buyLr"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyLr" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageIl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/il"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textIl"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/il"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonIl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="buyIl"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyIl" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageGp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/gp"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textGp"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/gp"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonGp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="buyGp37"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyGp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageGroza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/groza"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textGroza"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/groza"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonGroza"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="buyGroza"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyGroza" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageVss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/vss"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textVss"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/vss"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonVss"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="buyVss"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyVSS" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imagePkm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/pkm"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textPkm"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/pkm"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonPkm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="buyPkm"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyPKM" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageGauss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/gauss"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textGauss"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/gauss"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonGauss"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="buyGauss"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyGauss" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageRpg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weapon"
+                    app:srcCompat="@drawable/rpg"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+                <TextView
+                    android:id="@+id/textRpg"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rpg"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonRpg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="buyRpg"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:textStyle="bold"
+                    android:text="@string/buyRPG" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
